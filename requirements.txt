@@ -1,6 +1,11 @@
-requests==2.11
-flask>=0.11
-cchardet>=1.0
-fastcache>=1.0.2
-codeclimate-test-reporter
-lru-dict>=1.1.5
+# Core dependencies
+Flask==2.3.4
+requests==2.31.0
+
+# Optional performance packages (commented out, only if you want speedups)
+# cchardet>=2.1.7   # requires compilation
+# fastcache>=1.1     # requires compilation
+# lru-dict>=1.1.6    # requires compilation
+
+# Testing / CI (not needed for deployment)
+# codeclimate-test-reporter
