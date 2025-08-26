@@ -477,10 +477,11 @@ cron_tasks_list = [
 #   缺点: 兼容性可能不如暴力重写强, 而且可能与 shadow_url_redirect_regex 会出现兼容性问题.
 #   如果不使用暴力重写, 请将 shadow_url_redirect_regex 中的重定向移到 url_custom_redirect_regex 中
 # 设置为None则关闭cookies path重写, cookies的path属性会被保持原样(默认值)
-enable_aggressive_cookies_path_rewrite = None
+enable_aggressive_cookies_path_rewrite = True
+remove_cookie_samesite_none = False
 
 # ############## Misc ##############
-custom_allowed_origin = None
+custom_allowed_origin = "*"
 
 # #####################################################
 # ################## EXPERT Settings ##################
