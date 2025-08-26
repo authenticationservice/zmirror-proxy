@@ -41,7 +41,7 @@ my_host_scheme = 'http://'
 # ############## Target Domain Settings ##############
 # Target main domain
 #  Notice: ONLY the main domain and external domains are ALLOWED to cross this proxy
-target_domain = 'www.kernel.org'
+target_domain = 'www.google.com'
 
 # Target domain's scheme, 'http://' or 'https://', it affects the server only.
 target_scheme = 'https://'
