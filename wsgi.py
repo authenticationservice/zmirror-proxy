@@ -20,8 +20,8 @@ def main():
               "Please deploy it using Apache,You can find a deploy tutorial here:\n"
               "https://github.com/aploium/zmirror/wiki/%E9%83%A8%E7%BD%B2%E6%94%AF%E6%8C%81HTTPS%E5%92%8CHTTP2.0%E7%9A%84%E9%95%9C%E5%83%8F")
 
-    if my_host_port is None:
-        my_host_port = 80
+   if my_host_port is None or my_host_port == 80:
+    my_host_port = int(os.environ.get("PORT", 5000))
     try:
         application.run(
             port=my_host_port,
