@@ -36,12 +36,12 @@ my_host_name = 'web-production-7941.up.railway.app'
 my_host_port = None
 
 # Your domain's scheme, 'http://' or 'https://', it affects the user.
-my_host_scheme = 'http://'
+my_host_scheme = 'https://'
 
 # ############## Target Domain Settings ##############
 # Target main domain
 #  Notice: ONLY the main domain and external domains are ALLOWED to cross this proxy
-target_domain = 'www.google.com'
+target_domain = 'www.memo.cards'
 
 # Target domain's scheme, 'http://' or 'https://', it affects the server only.
 target_scheme = 'https://'
