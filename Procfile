@@ -1,1 +1,1 @@
-web: python zmirror/zmirror.py
+web: python wsgi.py
