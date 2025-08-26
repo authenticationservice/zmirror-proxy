@@ -1,11 +1,11 @@
 # Core dependencies
-Flask==2.3.4
+Flask==2.2.5
 requests==2.31.0
 
-# Optional performance packages (commented out, only if you want speedups)
-# cchardet>=2.1.7   # requires compilation
-# fastcache>=1.1     # requires compilation
-# lru-dict>=1.1.6    # requires compilation
+# Optional performance packages (commented out)
+# cchardet>=2.1.7
+# fastcache>=1.1
+# lru-dict>=1.1.6
 
 # Testing / CI (not needed for deployment)
 # codeclimate-test-reporter
