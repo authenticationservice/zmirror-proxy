@@ -27,7 +27,7 @@
 
 # ############## Local Domain Settings ##############
 # Your domain name, eg: 'blah.foobar.com'
-my_host_name = 'web-production-7941.up.railway.app'
+my_host_name = '127.0.0.1'
 
 # v0.18.2+
 # Your port, if use the default value(80 for http, 443 for https), please set it to None
@@ -36,12 +36,12 @@ my_host_name = 'web-production-7941.up.railway.app'
 my_host_port = None
 
 # Your domain's scheme, 'http://' or 'https://', it affects the user.
-my_host_scheme = 'https://'
+my_host_scheme = 'http://'
 
 # ############## Target Domain Settings ##############
 # Target main domain
 #  Notice: ONLY the main domain and external domains are ALLOWED to cross this proxy
-target_domain = 'www.memo.cards'
+target_domain = 'www.kernel.org'
 
 # Target domain's scheme, 'http://' or 'https://', it affects the server only.
 target_scheme = 'https://'
@@ -74,7 +74,7 @@ force_https_domains = 'NONE'
 # 自动域名添加白名单功能并不能取代 `external_domains` 中一个个指定的域名,
 #   因为基础重写(很重要)不支持使用通配符(否则会带来10倍以上的性能下降).
 # 如果需要使用 * 以外的通配符, 请查看 https://docs.python.org/3/library/fnmatch.html#module-fnmatch 这里的的说明
-enable_automatic_domains_whitelist = False
+enable_automatic_domains_whitelist = True
 # example:
 # domains_whitelist_auto_add_glob_list = ('*.google.com', '*.gstatic.com', '*.google.com.hk')
 domains_whitelist_auto_add_glob_list = ('*.kernel.org',)
@@ -477,10 +477,11 @@ cron_tasks_list = [
 #   缺点: 兼容性可能不如暴力重写强, 而且可能与 shadow_url_redirect_regex 会出现兼容性问题.
 #   如果不使用暴力重写, 请将 shadow_url_redirect_regex 中的重定向移到 url_custom_redirect_regex 中
 # 设置为None则关闭cookies path重写, cookies的path属性会被保持原样(默认值)
-enable_aggressive_cookies_path_rewrite = None
+enable_aggressive_cookies_path_rewrite = True
+remove_cookie_samesite_none = False
 
 # ############## Misc ##############
-custom_allowed_origin = None
+custom_allowed_origin = "*"
 
 # #####################################################
 # ################## EXPERT Settings ##################
