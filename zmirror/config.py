@@ -41,7 +41,7 @@ my_host_scheme = 'https://'
 # ############## Target Domain Settings ##############
 # Target main domain
 #  Notice: ONLY the main domain and external domains are ALLOWED to cross this proxy
-target_domain = 'memo.cards'
+target_domain = 'minesweeper.online'
 
 # Target domain's scheme, 'http://' or 'https://', it affects the server only.
 target_scheme = 'https://'
